@@ -10,7 +10,7 @@ case $op in
   +)c = `expr $a + $b`;;
   -)c = `expr $a - $b ;;
   /)c = `expr $a/$b ;;
-  *)c = `expr $a * $b ;;
+  \*)c = `expr $a * $b ;;
 esac
 
 echo "Result: "
