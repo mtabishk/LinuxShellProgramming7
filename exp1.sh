@@ -7,6 +7,7 @@ echo "Enter b "
 read b
 
 echo "Enter op"
+read op
 
 case $op in
   +)c=`expr "$a + $b"`
