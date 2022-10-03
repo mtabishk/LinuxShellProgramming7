@@ -10,9 +10,9 @@ echo "Enter op"
 read op
 
 case $op in
-  +)c=`expr "$a + $b"`
+  +)c=`expr "$a + $b" | bc`
   ;;
-  -)c=`expr "$a - $b"`
+  -)c=`expr "$a - $b" | bc`
   ;;
   /)c=`expr "$a / $b" | bc`
   ;;
@@ -21,4 +21,4 @@ case $op in
 esac
 
 echo "Result "
-echo $c
+echo "$c"
